@@ -36,7 +36,7 @@ public class DiscoveryTest extends TestBase {
     }
 
     @Test(priority = 6)
-    public void excel() throws IOException {
+    public void excel()  {
         Assert.assertTrue(Pages.discoveryShows().writeExcel(),"Failed print in excel sheet 'EpisodeDetails.xlsx'");
     }
 }

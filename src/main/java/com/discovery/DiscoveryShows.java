@@ -87,7 +87,7 @@ public class DiscoveryShows extends Base {
 
 
 
-    public boolean writeExcel() throws IOException {
+    public boolean writeExcel()  {
 
         Workbook workbook = new XSSFWorkbook();
         Sheet sheet = workbook.createSheet("EpisodeDetail");
