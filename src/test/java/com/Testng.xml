@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Regression suite" verbose="1" thread-count="1"  >
-    <test name="Test Cases 1 " >
+
+    <listeners>
+        <listener class-name="com.testbase.TestListener"></listener>
+    </listeners>
+    <test name="Test Case " >
         <classes>
             <class name="com.discoverytest.DiscoveryTest"/>
         </classes>

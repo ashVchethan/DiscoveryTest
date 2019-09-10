@@ -30,13 +30,13 @@ public class DiscoveryTest extends TestBase {
         Assert.assertTrue(Pages.discoveryShows().showMore(),"Failed to Click SHOW MORE button");
     }
 
-    @Test(priority = 4)
+    @Test(priority = 5)
     public void getTitleAndDuration(){
-        Assert.assertTrue(Pages.discoveryShows().showDetails(),"Failed to Click SHOW MORE button");
+        Assert.assertTrue(Pages.discoveryShows().showDetails(),"Failed to get title and duration details");
     }
 
-    @Test(priority = 5)
+    @Test(priority = 6)
     public void excel() throws IOException {
-        Assert.assertTrue(Pages.discoveryShows().writeExcel(),"Failed to reach popular shows carousal");
+        Assert.assertTrue(Pages.discoveryShows().writeExcel(),"Failed print in excel sheet 'EpisodeDetails.xlsx'");
     }
 }

@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a459bded-c2d2-4801-9aaa-93b24695762a" name="Default Changelist" comment="" />
+    <list default="true" id="a459bded-c2d2-4801-9aaa-93b24695762a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/discovery/DiscoveryShows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/discovery/DiscoveryShows.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/discovery/DiscoveryShowsRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/discovery/DiscoveryShowsRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utils/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utils/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utils/InitiateDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utils/InitiateDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utils/Pages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utils/Pages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/EpisodeDetails.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/EpisodeDetails.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/discoverytest/DiscoveryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/discoverytest/DiscoveryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/testbase/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testbase/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/testbase/TestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testbase/TestListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EpisodeDetails.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EpisodeDetails.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/discovery/DiscoveryShows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/discovery/DiscoveryShows.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/utils/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utils/Base.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/utils/InitiateDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utils/InitiateDriver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/utils/Pages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utils/Pages.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/discoverytest/DiscoveryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/discoverytest/DiscoveryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/testbase/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/testbase/TestBase.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +35,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -23,7 +46,12 @@
     </option>
   </component>
   <component name="ProjectId" id="1Qb0eIYcBjtQDnYKU9ndH1sqXmz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -135,5 +163,19 @@
       <updated>1568024081720</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

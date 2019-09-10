@@ -12,6 +12,8 @@ public class DiscoveryShowsRepo extends ObjectsBase {
 
     public DiscoveryShowsRepo(WebDriver driver){super(driver);}
 
+
+    //all the xpaths are stored in this class
     @FindBy(xpath = "//h2[@class='popularShowsCarousel__header']")
     protected static WebElement popularShowsTitle;
 

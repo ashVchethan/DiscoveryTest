@@ -16,6 +16,7 @@ public class Pages {
         return page;
     }
 
+    //This pages class is used in test class
     public static DiscoveryShows discoveryShows(){return getPage(DiscoveryShows.class);}
 
 }

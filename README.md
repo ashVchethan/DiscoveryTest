@@ -22,6 +22,6 @@ Comment:
 7. Run testng.xml file to execute all the test cases.
 8. JAVA version i have used is 11(11.0.3)
 9. IDE used is IntelliJIDEA
-10. Failed tests screenshots taken and stored in resources
+10. Failed tests screenshots taken and stored under resources
 11. Have commented in all classes. 
 

@@ -5,6 +5,7 @@ import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -62,7 +63,7 @@ public class DiscoveryShows extends Base {
     return true;
         }
 
-        LinkedHashMap<String, String> EpisodeMap = new LinkedHashMap<String, String>();
+        static LinkedHashMap<String, String> EpisodeMap = new LinkedHashMap<String, String>();
     public boolean showDetails(){
 
         System.out.println("episode title size "+dsr.episodeTitles.size());
@@ -86,75 +87,45 @@ public class DiscoveryShows extends Base {
 
 
 
+    public boolean writeExcel() throws IOException {
 
+        Workbook workbook = new XSSFWorkbook();
+        Sheet sheet = workbook.createSheet("EpisodeDetail");
+        Row row1 = sheet.createRow(0);
+        Cell cell = row1.createCell(0);
+        cell.setCellType(cell.CELL_TYPE_STRING);
+        cell.setCellValue("Episode Title");
 
-//    public boolean writeExcel1()  {
-//
-//        try {
-//            FileInputStream finput = new FileInputStream("./src/main/resources/EpisodeDetails.xlsx");
-//            Workbook workbook = new XSSFWorkbook(finput);
-//            Sheet sheet = workbook.getSheetAt(0);
-//            Row row = sheet.createRow(0);
-//            Cell cell = row.createCell(0);
-//            cell.setCellType(cell.CELL_TYPE_STRING);
-//            cell.setCellValue("Episode Title 1");
-//
-//            Cell cell2 = row.createCell(1);
-//            cell.setCellType(cell2.CELL_TYPE_STRING);
-//            cell2.setCellValue("Episode Duration 2");
-//            FileOutputStream fout = new FileOutputStream("./src/main/resources/EpisodeDetails.xlsx");
-//            workbook.write(fout);
-//
-////            Set episodeSet = EpisodeMap.entrySet();
-////            Iterator episodeItr = episodeSet.iterator();
-////
-////            while(episodeItr.hasNext()){
-////                System.out.println(episodeItr.next());
-////            }
-//        }
-//        catch (Exception e ){
-//            e.printStackTrace();
-//        }
-//return true;
-//
-//    }
+        Cell cell2 = row1.createCell(1);
+        cell.setCellType(cell2.CELL_TYPE_STRING);
+        cell2.setCellValue("Episode Duration");
 
-    public boolean writeExcel() throws IOException{
-//            FileOutputStream outputStream = new FileOutputStream("./src/main/resources/EpisodeDetails.xlsx");
-            Workbook workbook = new XSSFWorkbook();
-            Sheet sheet = workbook.createSheet("EpisodeDetail");
-
-
-        int rowCount = 1;
-
+        int rowCount = 0;
         Iterator episodeItr = EpisodeMap.keySet().iterator();
 
-        while(episodeItr.hasNext()) {
+        while (episodeItr.hasNext()) {
             Row row = sheet.createRow(++rowCount);
             writeBook((String) episodeItr.next(), row);
         }
 
-            try {
-                FileOutputStream outputStream = new FileOutputStream("./src/main/resources/EpisodeDetails.xlsx") ;
-                workbook.write(outputStream);
-            }
-            catch (Exception e){
-                e.printStackTrace();
-            }
+        try {
+            FileOutputStream outputStream = new FileOutputStream("./src/main/resources/EpisodeDetails.xlsx");
+            workbook.write(outputStream);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         return true;
     }
 
 
+    //to write in excel sheet
     private void writeBook(String key, Row row) {
         Cell cell = row.createCell(0);
         cell.setCellValue(key);
-        System.out.println("ashwi "+cell);
 
         cell = row.createCell(1);
         cell.setCellValue(EpisodeMap.get(key));
-        System.out.println("chethan "+cell);
-
     }
 
 
